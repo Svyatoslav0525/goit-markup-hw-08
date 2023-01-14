@@ -1,0 +1,35 @@
+// Для Флексів і їх складових
+
+@mixin centeredFlex($display: flex, $justifyContent: center, $alignItems: center) {
+  display: $display;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+}
+
+@mixin flexBasis($indent: $indentFour, $column: $colFour, $item: $itemFour) {
+  flex-basis: calc((100% - #{$indent} * #{$column}) / #{$item});
+}
+
+// Для кнопок
+
+@mixin btn($padding: 10px 32px, $color: $colors, $bgcolor: $colors, $fWeight: $fontWeight) {
+  display: block;
+  padding: $padding;
+  color: $color;
+  background-color: $bgcolor;
+  font-weight: $fWeight;
+  font-size: 16px;
+  font-style: normal;
+  text-align: center;
+  cursor: pointer;
+}
+
+// Для Хедера, Нашої команди i іншого
+
+// @mixin mainParts($fWeight: 500, $fSize: 16px, $lineHeight: 1.19, $letterSpacing: 0.03em) {
+//   font-weight: $fontWeight;
+//   font-size: $fSize;
+//   line-height: $lineHeight;
+//   letter-spacing: $letterSpacing;
+//   font-style: normal;
+// }

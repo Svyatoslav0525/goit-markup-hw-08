@@ -1,0 +1,31 @@
+.functions {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+  padding-top: 47px;
+  padding-bottom: 94px;
+  &__title {
+    @extend %headings;
+    margin-bottom: 50px;
+  }
+}
+
+.functions-set {
+  &__thumb {
+    position: relative;
+  }
+  &__text {
+    @extend %advantageFooter;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+
+    padding-top: 27px;
+    padding-bottom: 27px;
+
+    color: getColor('mainWhite');
+    background-color: getColor('functionsBgc');
+    text-align: center;
+  }
+}

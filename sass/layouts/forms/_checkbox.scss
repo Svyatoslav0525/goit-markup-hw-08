@@ -1,0 +1,75 @@
+.modal-form {
+  &__checkbox-input {
+    position: absolute;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  &__checkbox-link {
+    color: getColor('accent');
+    text-indent: 5px;
+  }
+  &__label-checkbox {
+    position: relative;
+
+    display: inline-flex;
+    align-items: center;
+
+    @media screen and (max-width: 1199px) {
+      font-size: 11.5px;
+      line-height: 1.16;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 1.71;
+    }
+    // font-size: 14px;
+    font-weight: getFontWeight('regular');
+    // line-height: 1.71;
+
+    &::before {
+      content: '';
+      display: inline-block;
+
+      margin-right: 8.4px;
+
+      width: 16px;
+      height: 16px;
+      border: 2px solid getColor('titleText');
+      border-radius: 2px;
+      cursor: pointer;
+
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      transition-property: background-color, border-color;
+      transition-duration: 250ms;
+      transition-timing-function: $timingFunction;
+    }
+  }
+  &__checkbox-agreement {
+    position: absolute;
+
+    display: none;
+
+    top: 3px;
+    left: 0;
+
+    transition-property: display;
+    transition-duration: 250ms;
+    transition-timing-function: $timingFunction;
+  }
+}
+
+.modal-form {
+  &__checkbox-input:checked + &__label-checkbox &__checkbox-agreement {
+    display: block;
+    cursor: pointer;
+  }
+  &__checkbox-input:checked + &__label-checkbox::before {
+    background-color: getColor('accent');
+    border-color: getColor('accent');
+  }
+}

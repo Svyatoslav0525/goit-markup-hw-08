@@ -1,0 +1,366 @@
+// Секція Header
+
+@media screen and (min-width: 1200px) {
+  .header {
+    @include centeredFlex;
+  }
+}
+
+.header {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    &__container {
+      @include centeredFlex($justifyContent: space-between);
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    &__container {
+      @include centeredFlex;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    &__container-overlay {
+      @include centeredFlex($justifyContent: space-between);
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    &__container-overlay {
+      @include centeredFlex;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    &-nav__list {
+      @include centeredFlex($justifyContent: space-between);
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    &-nav__list {
+      @include centeredFlex;
+    }
+  }
+}
+
+.header__contacts {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    &-container {
+      @include centeredFlex;
+      // display: inline-flex;
+      // padding: 21px 0px;
+      width: 140px;
+      height: 40px;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    & {
+      // @include centeredFlex;
+      display: inline-flex;
+      flex-wrap: wrap;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    & {
+      @include centeredFlex;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    &-link {
+      @include centeredFlex;
+    }
+  }
+}
+
+// Секція Переваг компанії
+
+.advantage-set {
+  @include centeredFlex;
+  margin: -15px;
+  &__item {
+    margin: 15px;
+  }
+  @media screen and (max-width: 1199px) {
+    & {
+      flex-wrap: wrap;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    &__item {
+      @include flexBasis($column: $colTwo, $item: $itemTwo);
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    &__item {
+      @include flexBasis;
+    }
+  }
+  &__container {
+    @include centeredFlex;
+  }
+}
+
+// Сфера надання послуг "Functions"
+
+.functions-set {
+  @include centeredFlex;
+  margin: -15px;
+  &__item {
+    @include flexBasis($column: $colThree, $item: $itemThree);
+    margin: 15px;
+  }
+}
+
+// Команда компанії "Team"
+
+.team-list {
+  @include centeredFlex;
+  margin: -15px;
+  &__item {
+    margin: 15px;
+  }
+  @media screen and (max-width: 1199px) {
+    & {
+      flex-wrap: wrap;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    &__item {
+      @include flexBasis($column: $colTwo, $item: $itemTwo);
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    &__item {
+      @include flexBasis;
+    }
+  }
+}
+
+.team-socials {
+  @include centeredFlex;
+  margin: -5px;
+  &__item {
+    @include flexBasis($indent: $indentTwo);
+    margin: 5px;
+  }
+  &__link {
+    @include centeredFlex;
+  }
+}
+
+// Клієнти компанії: "Clients"
+
+.clients-list {
+  @include centeredFlex;
+  flex-wrap: wrap;
+  margin: -15px;
+  &__item {
+    margin: 15px;
+  }
+  &__link {
+    @include centeredFlex;
+  }
+  @media screen and (max-width: 767px) {
+    &__item {
+      @include flexBasis($column: $colTwo, $item: $itemTwo);
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    &__item {
+      @include flexBasis($column: $colThree, $item: $itemThree);
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    &__item {
+      @include flexBasis($column: $colSix, $item: $itemSix);
+    }
+  }
+}
+
+// Portfolio ! Buttons
+
+.portfolio {
+  &__buttons {
+    margin: -4px;
+    &-item {
+      @include flexBasis($indent: $indentButton, $column: $colFive, $item: $itemFive);
+      margin: 4px;
+    }
+  }
+  @media screen and (max-width: 639px) {
+    &__buttons {
+      display: inline-flex;
+      flex-wrap: wrap;
+    }
+  }
+  @media screen and (min-width: 640px) and (max-width: 1199px) {
+    &__buttons {
+      @include centeredFlex;
+      flex-wrap: wrap;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    &__buttons {
+      @include centeredFlex;
+    }
+  }
+}
+
+// Portfolio-set
+
+.portfolio-set {
+  flex-wrap: wrap;
+  margin: -15px;
+  &__item {
+    margin: 15px;
+  }
+  &__link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  &__link-wrapper {
+    flex-grow: 1;
+  }
+  @media screen and (max-width: 767px) {
+    & {
+      @include centeredFlex;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    & {
+      display: inline-flex;
+    }
+    &__item {
+      @include flexBasis($column: $colTwo, $item: $itemTwo);
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    & {
+      @include centeredFlex;
+    }
+    &__item {
+      @include flexBasis($column: $colThree, $item: $itemThree);
+    }
+  }
+}
+
+// FOOTER !!! ///
+
+.footer {
+  @media screen and (max-width: 767px) {
+    &__container {
+      @include centeredFlex;
+      flex-direction: column;
+    }
+    &__container-overlay {
+      @include centeredFlex;
+      flex-direction: column;
+      margin-bottom: 60px;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    &__container {
+      @include centeredFlex($alignItems: baseline);
+      flex-wrap: wrap;
+    }
+    &__container-overlay {
+      @include centeredFlex;
+      flex-direction: column;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    &__container {
+      @include centeredFlex($alignItems: baseline);
+    }
+  }
+}
+
+.footer {
+  @media screen and (max-width: 1199px) {
+    &__address {
+      @include centeredFlex;
+      flex-direction: column;
+    }
+    &-list {
+      @include centeredFlex;
+      flex-direction: column;
+    }
+  }
+}
+
+.footer-socials {
+  @media screen and (max-width: 767px) {
+    &__overlay {
+      @include centeredFlex;
+      flex-direction: column;
+      margin-bottom: 60px;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    &__overlay {
+      @include centeredFlex;
+      flex-direction: column;
+      margin-left: 165px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    &__overlay {
+      margin-left: 70px;
+    }
+  }
+
+  // @include centeredFlex($alignItems: baseline);
+  &-list {
+    @include centeredFlex;
+    margin: -5px;
+    &__item {
+      @include flexBasis($indent: $indentTwo);
+      margin: 5px;
+    }
+    &__link {
+      @include centeredFlex;
+    }
+  }
+}
+
+.footer-form {
+  @media screen and (max-width: 1199px) {
+    & {
+      @include centeredFlex;
+      flex-direction: column;
+    }
+    &__overlay {
+      @include centeredFlex;
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+    &__input {
+      @include centeredFlex;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    & {
+      margin-top: 60px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    &__button {
+      @include centeredFlex;
+      align-self: flex-end;
+    }
+  }
+  @include centeredFlex;
+  &__overlay {
+    display: flex;
+    flex-direction: column;
+  }
+  // &__button {
+  //   @include centeredFlex;
+  //   align-self: flex-end;
+  // }
+}
+
+// Checkbox
+
+.modal-form {
+  &__checkbox {
+    @include centeredFlex;
+  }
+}

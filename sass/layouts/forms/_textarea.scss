@@ -1,0 +1,20 @@
+.modal-form__textarea {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  &-input {
+    padding: 12px 14px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: none;
+    resize: none;
+    &::placeholder {
+      font-size: 14px;
+      font-weight: getFontWeight('regular');
+      line-height: 1.14;
+      letter-spacing: 0.01em;
+
+      color: rgba(117, 117, 117, 0.5);
+    }
+  }
+}

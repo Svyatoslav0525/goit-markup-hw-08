@@ -1,0 +1,121 @@
+.hero {
+  &__container {
+    text-align: center;
+    margin: 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  @media screen and (max-width: 480px) {
+    &__container {
+      padding-top: 118px;
+      padding-bottom: 118px;
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../mainphotos/background/mobile/header-480.jpg');
+    }
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (-o-min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      &__container {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+          url('../mainphotos/background/mobile/header-960.jpg');
+      }
+    }
+    @media screen and (min-device-pixel-ratio: 3),
+      screen and (-webkit-min-device-pixel-ratio: 3),
+      screen and (-o-min-device-pixel-ratio: 3),
+      screen and (min-resolution: 288dpi),
+      screen and (min-resolution: 3dppx) {
+      &__container {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+          url('../mainphotos/background/mobile/header-1440.jpg');
+      }
+    }
+  }
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    &__container {
+      padding-top: 118px;
+      padding-bottom: 118px;
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../mainphotos/background/tablet/header-768.jpg');
+    }
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (-o-min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      &__container {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+          url('../mainphotos/background/tablet/header-1536.jpg');
+      }
+    }
+    @media screen and (min-device-pixel-ratio: 3),
+      screen and (-webkit-min-device-pixel-ratio: 3),
+      screen and (-o-min-device-pixel-ratio: 3),
+      screen and (min-resolution: 288dpi),
+      screen and (min-resolution: 3dppx) {
+      &__container {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+          url('../mainphotos/background/tablet/header-2304.jpg');
+      }
+    }
+  }
+  @media screen and (min-width: 769px) {
+    &__container {
+      padding-top: 200px;
+      padding-bottom: 200px;
+      max-width: 1600px;
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../mainphotos/background/desktop/header-1600.jpg');
+    }
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (-o-min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      &__container {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+          url('../mainphotos/background/desktop/header-3200.jpg');
+      }
+    }
+    @media screen and (min-device-pixel-ratio: 3),
+      screen and (-webkit-min-device-pixel-ratio: 3),
+      screen and (-o-min-device-pixel-ratio: 3),
+      screen and (min-resolution: 288dpi),
+      screen and (min-resolution: 3dppx) {
+      &__container {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+          url('../mainphotos/background/desktop/header-4800.jpg');
+      }
+    }
+  }
+}
+
+.hero {
+  &__title {
+    display: block;
+    margin: 0 auto;
+    color: getColor('mainWhite');
+    font-weight: getFontWeight('black');
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    max-width: 695px;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
+}
+
+.hero {
+  @media screen and (min-width: 1200px) {
+    &__title {
+      font-size: 44px;
+      line-height: 1.36;
+      max-width: 695px;
+    }
+  }
+}

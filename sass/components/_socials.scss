@@ -1,0 +1,11 @@
+// Іконки для Нашої Команди "Team"
+// Іконки для Наших клієнтів
+// Для Іконок Футера
+
+.team-socials,
+.clients-list,
+.footer-socials {
+  &__icon {
+    fill: currentColor;
+  }
+}

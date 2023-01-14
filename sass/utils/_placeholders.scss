@@ -1,0 +1,69 @@
+// Плейсхолдер для заголовків h2 на сторінці index.html
+
+%headings {
+  font-weight: getFontWeight('bold');
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  color: getColor('titleText');
+}
+
+// "Хедера" і "Нашої команди"
+
+%headerTeam {
+  font-weight: getFontWeight('medium');
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+// Для заголовків Переваг, Функцій і Футера
+
+%advantageFooter {
+  font-weight: getFontWeight('bold');
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: getColor('titleText');
+}
+
+// Для тексту в Перевагах і адреси в Футері
+
+%advantageText {
+  font-size: 14px;
+  font-weight: getFontWeight('regular');
+  line-height: 1.71;
+  font-style: normal;
+  letter-spacing: 0.03em;
+}
+
+// Для заголовка в перевагах
+
+%advantageHeading {
+  display: block;
+  font-size: 16px;
+  font-weight: getFontWeight('medium');
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+// Для кнопок на сторінці index.html
+
+%btn {
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  padding: 10px 32px;
+  color: getColor('mainWhite');
+  background-color: getColor('accent');
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: getFontWeight('bold');
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  cursor: pointer;
+}

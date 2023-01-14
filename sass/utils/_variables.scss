@@ -1,0 +1,99 @@
+// Словник змінних кольорів !
+
+$colors: (
+  'primaryText': #757575,
+  'titleText': #212121,
+  'accent': #2196f3,
+  'heroBtnHover': #188ce8,
+  'footerContacts': rgba(255, 255, 250, 0.6),
+  'mainBackground': #e5e5e5,
+  'secondBackground': #2f303a,
+  'thirdBackground': #f5f4fa,
+  'mainWhite': #ffffff,
+  'logoDark': #000000,
+  'iconsMain': #afb1b8,
+  'headerBorder': #ececec,
+  'portfolioItem': #eeeeee,
+  'functionsBgc': rgba(47, 48, 58, 0.8),
+  'portfolioThumb': rgba(33, 150, 243, 0.9),
+  'footerSocialsBgc': rgba(255, 255, 255, 0.1),
+  'footerInputBorder': rgba(255, 255, 255, 0.3),
+  'backdrop': rgba(0, 0, 0, 0.2),
+);
+
+@function getColor($key) {
+  @return map-get($colors, $key);
+}
+
+// Словник змінних сімейства шрифтів !
+
+$fontWeight: (
+  'regular': 400,
+  'medium': 500,
+  'bold': 700,
+  'black': 900,
+);
+
+@function getFontWeight($key) {
+  @return map-get($fontWeight, $key);
+}
+
+// Змінні відстаней !
+
+$indentOne: 5;
+$indentOneMinus: -5;
+$indentTwo: 10;
+$indentThree: 15;
+$indentThreeMinus: -15;
+$indentFour: 30;
+$indentFive: 20;
+$indentButton: 8;
+
+// $indents: (
+//   'usual': 30px,
+//   'halfUsual': 15px,
+//   'special': 10px,
+//   'teamList': -5px,
+//   'teamItem': 5px,
+//   'other': -15px,
+// );
+
+// @function getIndent($key) {
+//   @return map-get($indents, $key);
+// }
+
+$colTwo: 2;
+$colThree: 3;
+$colFour: 4;
+$colFive: 5;
+$colSix: 6;
+
+// $cols: (
+//   'two': 2,
+//   'three': 3,
+//   'five': 5,
+// );
+
+// @function getCol($key) {
+//   @return map-get($cols, $key);
+// }
+
+$itemTwo: 2;
+$itemThree: 3;
+$itemFour: 4;
+$itemFive: 5;
+$itemSix: 6;
+
+// $items: (
+//   'three': 3,
+//   'four': 4,
+//   'six': 6,
+// );
+
+// @function getItem($key) {
+//   @return map-get($items, $key);
+// }
+
+// Кубік Bezier !
+
+$timingFunction: cubic-bezier(0.4, 0, 0.2, 1);

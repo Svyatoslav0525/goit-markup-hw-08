@@ -1,0 +1,13 @@
+.modal-form {
+  &__overlay {
+    margin-bottom: 30px;
+  }
+  &__field {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  &__wrapper {
+    position: relative;
+    width: inherit;
+  }
+}

@@ -1,0 +1,43 @@
+.modal-form {
+  &__input:focus ~ &__icon {
+    fill: getColor('accent');
+  }
+  &__input {
+    width: inherit;
+    height: 40px;
+
+    padding: 11px 12px 11px 42px;
+    margin: 0;
+    // font: inherit;
+    font-size: 16px;
+    font-weight: getFontWeight('regular');
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: $timingFunction;
+
+    &:hover,
+    &:focus {
+      border-color: getColor('accent');
+    }
+  }
+  &__icon {
+    position: absolute;
+    display: inline-block;
+
+    top: 50%;
+    left: 12px;
+
+    transform: translateY(-50%);
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: $timingFunction;
+  }
+}

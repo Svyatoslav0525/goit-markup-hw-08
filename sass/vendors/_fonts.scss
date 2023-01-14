@@ -1,0 +1,53 @@
+// Font "Raleway" bold.
+
+@font-face {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url('../fonts/Raleway/Raleway-Bold.ttf') format('truetype'),
+    url('../fonts/Raleway/Raleway-Bold.woff') format('woff'),
+    url('../fonts/Raleway/Raleway-Bold.woff2') format('woff2');
+}
+
+// Fonts "Roboto" normal, medium, bold and black.
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url('../fonts/Roboto/Roboto-Regular.ttf') format('truetype'),
+    url('../fonts/Roboto/roboto-regular-webfont.woff') format('woff'),
+    url('../fonts/Roboto/roboto-regular-webfont.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url('../fonts/Roboto/Roboto-Medium.ttf') format('truetype'),
+    url('../fonts/Roboto/roboto-medium-webfont.woff') format('woff'),
+    url('../fonts/Roboto/roboto-medium-webfont.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url('../fonts/Roboto/Roboto-Bold.ttf') format('truetype'),
+    url('../fonts/Roboto/roboto-bold-webfont.woff') format('woff'),
+    url('../fonts/Roboto/roboto-bold-webfont.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+  src: url('../fonts/Roboto/Roboto-Black.ttf') format('truetype'),
+    url('../fonts/Roboto/roboto-black-webfont.woff') format('woff'),
+    url('../fonts/Roboto/roboto-black-webfont.woff2') format('woff2');
+}

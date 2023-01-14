@@ -1,0 +1,12 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  letter-spacing: 0.03em;
+  color: getColor('primaryText');
+  background-color: getColor('mainWhite');
+}
+
+body.modal-open {
+  overflow: hidden;
+}

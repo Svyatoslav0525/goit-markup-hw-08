@@ -1,0 +1,199 @@
+.header {
+  width: 100%;
+  border-bottom: 1px solid getColor('headerBorder');
+}
+
+.header__logo {
+  padding: 0;
+  margin: 0;
+  &--dark {
+    color: getColor('logoDark');
+  }
+}
+
+.header__container {
+  @media screen and (min-width: 768px) {
+    &-overlay {
+      margin-left: 88px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    &-overlay {
+      margin-left: 93px;
+    }
+  }
+}
+
+.header-nav__list-item {
+  @media screen and (min-width: 768px) {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+}
+
+.header-nav__list-link {
+  @media screen and (max-width: 767px) {
+    font-style: normal;
+    font-weight: getFontWeight('medium');
+    font-size: 40px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-weight: getFontWeight('medium');
+    font-size: 14px;
+    font-style: normal;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  }
+  color: getColor('titleText');
+  &:hover,
+  &:focus {
+    color: getColor('accent');
+  }
+}
+
+// Об'єднання класів посилань в header-nav__list i header__contacts
+
+.header-nav__list-link,
+.header__contacts-link {
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--main-timing-function);
+}
+
+// Контакти компінії
+
+.header__contacts-container {
+  @media screen and (min-width: 768px) {
+    margin-left: 88px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 304px;
+  }
+}
+
+.header__contacts {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    &-item:first-child {
+      padding: 0;
+      margin-bottom: 10px;
+    }
+    // &-item:last-child {
+    //   padding-right: 13px;
+    // }
+  }
+  @media screen and (min-width: 1200px) {
+    &-item:first-child {
+      margin-right: 30px;
+    }
+  }
+}
+
+.header__contacts-icon {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    & {
+      fill: currentColor;
+      margin-right: 10px;
+    }
+    &--envelope {
+      width: 14px;
+      height: 10px;
+    }
+    &--smartphone {
+      width: 10px;
+      height: 14px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    &--envelope {
+      width: 16px;
+      height: 12px;
+    }
+    &--smartphone {
+      width: 10px;
+      height: 16px;
+    }
+  }
+}
+
+.header__contacts {
+  &-link {
+    color: getColor('primaryText');
+    &:hover,
+    &:focus {
+      color: getColor('accent');
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    &-link {
+      font-size: 12px;
+      line-height: 1.16;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    &-link {
+      padding-top: 32px;
+      padding-bottom: 32px;
+      font-size: 14px;
+      font-weight: getFontWeight('medium');
+    }
+  }
+}
+
+.header__contacts-link {
+  @media screen and (max-width: 767px) {
+    &--envelope {
+      font-style: normal;
+      font-weight: getFontWeight('medium');
+      font-size: 24px;
+      line-height: 1.16;
+      letter-spacing: 0.02em;
+    }
+    &--smartphone {
+      font-style: normal;
+      font-weight: getFontWeight('medium');
+      font-size: 34px;
+      line-height: 1.17;
+      letter-spacing: 0.02em;
+    }
+  }
+}
+
+.header-nav__list-link--current {
+  @media screen and (min-width: 768px) {
+    position: relative;
+    color: getColor('accent');
+    &::after {
+      content: '';
+      position: absolute;
+
+      left: 0;
+      bottom: -1px;
+      width: 100%;
+      height: 4px;
+
+      background-color: getColor('accent');
+      border-radius: 2px;
+
+      animation-name: ChangeScaleX;
+      animation-duration: 250ms;
+      animation-timing-function: $timingFunction;
+    }
+  }
+}
+
+@keyframes ChangeScaleX {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
