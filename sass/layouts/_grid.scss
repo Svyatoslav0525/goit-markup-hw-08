@@ -19,14 +19,19 @@
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     &__container-overlay {
-      @include centeredFlex($justifyContent: space-between);
+      width: 140px;
+      height: 40px;
+    }
+    &__contacts-container {
+      width: inherit;
+      height: inherit;
     }
   }
-  @media screen and (min-width: 1200px) {
-    &__container-overlay {
-      @include centeredFlex;
-    }
-  }
+  // @media screen and (min-width: 1200px) {
+  //   &__container-overlay {
+  //     @include centeredFlex;
+  //   }
+  // }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     &-nav__list {
       @include centeredFlex($justifyContent: space-between);
@@ -39,19 +44,21 @@
   }
 }
 
-.header__contacts {
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    &-container {
-      @include centeredFlex;
-      // display: inline-flex;
-      // padding: 21px 0px;
-      width: 140px;
-      height: 40px;
+.header-button {
+  @media screen and (max-width: 767px) {
+    &__contacts {
+      @include centeredFlex($justifyContent: flex-start, $alignItems: flex-start);
+    }
+    &__contacts-list {
+      @include centeredFlex($justifyContent: flex-start, $alignItems: flex-start);
+      flex-direction: column;
     }
   }
+}
+
+.header__contacts {
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     & {
-      // @include centeredFlex;
       display: inline-flex;
       flex-wrap: wrap;
     }

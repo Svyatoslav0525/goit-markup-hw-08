@@ -49,6 +49,9 @@
     }
   }
   @media screen and (max-width: 767px) {
+    &-set__title {
+      text-align: center;
+    }
     &-set__container {
       max-width: 450px;
       width: 100%;
