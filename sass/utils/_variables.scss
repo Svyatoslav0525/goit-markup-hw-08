@@ -40,27 +40,14 @@ $fontWeight: (
 
 // Змінні відстаней !
 
-$indentOne: 5;
-$indentOneMinus: -5;
+$indentOne: 5px;
+$indentOneMinus: -5px;
 $indentTwo: 10;
-$indentThree: 15;
-$indentThreeMinus: -15;
-$indentFour: 30;
-$indentFive: 20;
+$indentThree: 15px;
+$indentThreeMinus: -15px;
+$indentFour: 30px;
+$indentFive: 20px;
 $indentButton: 8;
-
-// $indents: (
-//   'usual': 30px,
-//   'halfUsual': 15px,
-//   'special': 10px,
-//   'teamList': -5px,
-//   'teamItem': 5px,
-//   'other': -15px,
-// );
-
-// @function getIndent($key) {
-//   @return map-get($indents, $key);
-// }
 
 $colTwo: 2;
 $colThree: 3;
@@ -68,31 +55,11 @@ $colFour: 4;
 $colFive: 5;
 $colSix: 6;
 
-// $cols: (
-//   'two': 2,
-//   'three': 3,
-//   'five': 5,
-// );
-
-// @function getCol($key) {
-//   @return map-get($cols, $key);
-// }
-
 $itemTwo: 2;
 $itemThree: 3;
 $itemFour: 4;
 $itemFive: 5;
 $itemSix: 6;
-
-// $items: (
-//   'three': 3,
-//   'four': 4,
-//   'six': 6,
-// );
-
-// @function getItem($key) {
-//   @return map-get($items, $key);
-// }
 
 // Кубік Bezier !
 
